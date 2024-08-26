@@ -3,57 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>研究者ページ - あなたの名前</title>
+    <meta name="description" content="Hironobu Chiba's professional profile, research, publications, awards, and more.">
+    <meta name="keywords" content="Hironobu Chiba, research, publications, acoustic signal processing, NTT, patents">
+    <title>Hironobu Chiba - Researcher Profile</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>あなたの名前</h1>
-        <p>音響信号処理研究者</p>
+        <div class="navbar">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#awards">Awards & Funds</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><button id="lang-toggle" class="lang-btn">English</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">プロフィール</a></li>
-            <li><a href="#research">研究内容</a></li>
-            <li><a href="#publications">論文</a></li>
-            <li><a href="#contact">連絡先</a></li>
-        </ul>
-    </nav>
 
     <section id="about" class="two-column">
         <div class="column">
-            <img src="profile.JPG" alt="profile" class="profile-img">
+            <img src="profile.jpg" alt="Hironobu Chiba's photo" class="profile-img">
         </div>
         <div class="column">
-            <h2>プロフィール</h2>
-            <p>あなたの簡単な自己紹介や現在の研究について説明します。</p>
+            <h2>About me</h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;CHIBA, Hironobu (千葉 大将)</h3>
+            <div id="about-content-ja">
+                <strong>所属:</strong>
+                <ul>
+                    <li>日本電信電話(株)</li>
+                    <li>NTT コンピュータ&データサイエンス研究所</li>
+                </ul>
+                <strong>専門:</strong>
+                <ul>
+                    <li>音響信号処理
+                        <ul>
+                            <li>音源強調，音源分離，バイノーラル録音・再生，イベント検知</li>
+                        </ul>
+                    </li>
+                    <li>音楽情報処理，音楽情報検索</li>
+                    <li>音響機器設計
+                        <ul>
+                            <li>音響デバイスの局所再生のための筐体設計</li>
+                            <li>オープンイヤー型イヤホン・ヘッドホン</li>
+                            <li>小型スピーカ</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="about-content-en" style="display: none;">
+                <strong>Affiliation:</strong>
+                <ul>
+                    <li>Nippon Telegraph and Telephone Corporation (NTT)</li>
+                    <li>NTT Computer & Data Science Laboratories</li>
+                </ul>
+                <strong>Specialization:</strong>
+                <ul>
+                    <li>Acoustic Signal Processing
+                        <ul>
+                            <li>Source enhancement, source separation, binaural recording and playback, event detection</li>
+                        </ul>
+                    </li>
+                    <li>Music Information Processing, Music Information Retrieval</li>
+                    <li>Acoustic Device Design
+                        <ul>
+                            <li>Enclosure design for localized playback of acoustic devices</li>
+                            <li>Open-ear headphones and earphones</li>
+                            <li>Small Loudspeakers</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     
-    
-
     <section id="research">
-        <h2>研究内容</h2>
-        <p>あなたの専門分野や主要な研究テーマについての説明を記載します。</p>
+        <h2>Research</h2>
+        <div id="research-content-ja">
+            <p>NTT CD研でプライベート音響空間：パーソナライズドサウンドゾーン（PSZ）の研究開発に従事。</p>
+            <ul>
+                <li>耳を塞がず，音漏れのないオープンイヤー型イヤホン設計を発明<br>&nbsp;&nbsp;<a href="https://www.nwm.global/">NTT ソノリティ社の製品：nwm MWE001, MBE001 MBN001，nwm ONE で利用</a></li>
+                <li>オープンイヤー型イヤホンを使った空間音響処理の研究開発</li>
+                <li>その他，大規模楽曲データの音響的分析，車向けイベント検知，ウェアラブル振動デバイスの開発などの経験</li>
+            </ul>
+        </div>
+        <div id="research-content-en" style="display: none;">
+            <p>Currently engaged in research and development of private acoustic spaces: personalized sound zones (PSZ) at NTT Computer & Data Science Laboratories.</p>
+            <ul>
+                <li>Invented open-ear headphones that do not block the ears and have no sound leakage<br>&nbsp;&nbsp;Used in <a href="https://www.nwm.global/">NTT sonority products: nwm MWE001, MBE001 MBN001, nwm ONE</a></li>
+                <li>Conducted research and development of spatial audio processing using open-ear headphones and earphones</li>
+                <li>Experienced in acoustic analysis of large-scale music data, event detection for vehicles, and development of wearable vibration devices</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="publications">
+        <h2>Publications</h2>
+        <p><a href="https://scholar.google.com/citations?user=lE9qymsAAAAJ" target="_blank">Google Scholar profile</a>.</p>
+
+        <h2>Patents (in published)</h2>
+        <p><a href="https://patents.google.com/?inventor=Hironobu+Chiba&assignee=Pioneer,Nippon+Telegr+%26+Teleph+Corp+%3CNtt%3E" target="_blank">Google Patents</a>.</p>
     </section>
 
-    <section id="publications">
-        <h2>論文</h2>
-        <ul>
-            <li>論文タイトル1 - <a href="リンク先">リンク</a></li>
-            <li>論文タイトル2 - <a href="リンク先">リンク</a></li>
-            <li>論文タイトル3 - <a href="リンク先">リンク</a></li>
+    <section id="awards">
+        <h2>Awards & Funds</h2>
+        <ul id="awards-content-ja">
+            <li>2024年 NTTコンピュータ&データサイエンス研究所 所長表彰 特別賞</li>
+            <li>2023年 2022年度 日本電信電話(株) 社長表彰（研究開発表彰）</li>
+            <li>2023年 2023 63rd ACC TOKYO CREATIVITY AWARDS クリエイティブイノベーション部門 ファイナリスト</li>
+            <li>2023年 第31回（令和5年度）日本音響学会 技術開発賞</li>
+            <li>2023年 NTTコンピュータ&データサイエンス研究所 所長表彰 特別賞</li>
+            <li>2023年 NTTサービスイノベーション総合研究所 優秀業績賞</li>
+            <li>2022年 NTTコンピュータ&データサイエンス研究所 所長表彰 研究奨励賞</li>
+            <li>2015年 パイオニア株式会社 新人ソフトウェア研修 表彰</li>
+            <li>2015年 パイオニア販売株式会社 2015年 夏季販売実習 西日本エリア 優秀賞</li>
+            <li>2015年 日本学生支援機構　大学院第一種奨学金半額免除</li>
+            <li>2015年 筑波大学大学院　コンピュータサイエンス専攻長表彰</li>
+            <li>2015年 一般社団法人日本音響学会　第10回学生優秀発表賞</li>
+        </ul>
+        <ul id="awards-content-en" style="display: none;">
+            <li>2024 NTT Computer & Data Science Laboratories Director’s Award, Special Prize</li>
+            <li>2023 Nippon Telegraph and Telephone Corporation President's Award (Research and Development Award)</li>
+            <li>2023 63rd ACC TOKYO CREATIVITY AWARDS Finalist, Creative Innovation Category</li>
+            <li>2023 31st Acoustical Society of Japan Technology Development Award</li>
+            <li>2023 NTT Computer & Data Science Laboratories Director’s Award, Special Prize</li>
+            <li>2023 NTT Service Innovation Laboratory Group Excellent Performance Award</li>
+            <li>2022 NTT Computer & Data Science Laboratories Director’s Award, Research Encouragement Award</li>
+            <li>2015 Pioneer Corporation Newcomer Software Training Award</li>
+            <li>2015 Pioneer Sales Corporation 2015 Summer Sales Internship, West Japan Area Excellence Award</li>
+            <li>2015 JASSO Graduate School First-Class Scholarship, Half Waiver</li>
+            <li>2015 Tsukuba University Graduate School, Computer Science Major Award</li>
+            <li>2015 Acoustical Society of Japan 10th Student Excellent Presentation Award</li>
         </ul>
     </section>
+    
+    <section id="activities">
+        <h2>Academic Activities</h2>
+        <ul id="activities-content-ja">
+            <li>2024.9 日本音響学会 第152回(2024年秋季)研究発表会 副座長</li>
+            <li>2024.6 - 現在 高臨場感オーディオ調査研究委員会 研究委員</li>
+        </ul>
+        <ul id="activities-content-en" style="display: none;">
+            <li>2024.9 Vice Chair, 152nd (2024 Autumn) Research Presentation Meeting of the Acoustical Society of Japan</li>
+            <li>2024.6 - Present Research Committee Member, High Realism Audio Survey Research Committee</li>
+        </ul>
+    </section>
+    
+
 
     <section id="contact">
-        <h2>連絡先</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <h2>Contact</h2>
+        <p><a href="https://www.linkedin.com/in/hironobu-chiba">LinkedIn</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 あなたの名前</p>
+        <p>&copy; 2024 Hironobu Chiba</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
