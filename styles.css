@@ -1,148 +1,17 @@
-/* グローバルスタイル */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+#chiba-preview{font-family:Inter,-apple-system,BlinkMacSystemFont,'Noto Sans JP',sans-serif;color:#12213d;background:#fff;font-size:14px;line-height:1.65;border:1px solid #e0e6ed;border-radius:12px;overflow:hidden}#chiba-preview *{box-sizing:border-box}#chiba-preview .controls{display:flex;gap:14px;align-items:center;justify-content:space-between;padding:10px 18px;background:#f3f6fa;border-bottom:1px solid #e0e6ed;flex-wrap:wrap}#chiba-preview button{font:inherit;color:#213c62;background:white;border:1px solid #ced8e6;border-radius:7px;padding:6px 12px;cursor:pointer}#chiba-preview label{display:flex;align-items:center;gap:6px}#chiba-preview .viewport{height:610px;overflow-y:auto;overflow-x:hidden;position:relative;scroll-behavior:smooth;overscroll-behavior:contain;background:#fff}#chiba-preview header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:18px 28px;background:rgba(255,255,255,.94);border-bottom:1px solid #e9edf3;backdrop-filter:blur(12px);transition:padding .25s,box-shadow .25s}#chiba-preview header.compact{padding-top:10px;padding-bottom:10px;box-shadow:0 3px 18px #12213d08}#chiba-preview .brand{font-size:19px;font-weight:600;letter-spacing:-.5px}#chiba-preview nav{display:flex;gap:18px}#chiba-preview nav button{border:0;background:transparent;padding:3px 0;font-size:12px}#chiba-preview .content{max-width:1024px;margin:auto}#chiba-preview .hero{position:relative;display:grid;grid-template-columns:150px 1fr;align-items:center;gap:30px;padding:58px 44px 62px;isolation:isolate;overflow:hidden}#chiba-preview .portrait{width:150px;height:200px;object-fit:cover;border-radius:8px}#chiba-preview h1{font-size:38px;line-height:1.2;letter-spacing:.06em;margin:0 0 8px;font-weight:600}#chiba-preview .english{font-size:23px;color:#65758c;margin-bottom:20px}#chiba-preview .affiliation{font-size:16px;font-weight:600;line-height:1.55}#chiba-preview .role{color:#65758c;font-size:13px;margin-top:3px}#chiba-preview .intro{margin:18px 0;color:#455773;max-width:540px}#chiba-preview .tags{display:flex;gap:7px;flex-wrap:wrap}#chiba-preview .tags span{font-size:11px;padding:3px 10px;background:#f0f4fa;border-radius:20px}#chiba-preview .hero-art{position:absolute;inset:0;z-index:-1;opacity:.09;pointer-events:none;color:#3276ca}#chiba-preview .hero-art svg{width:100%;height:100%}#chiba-preview .quick{display:flex;gap:22px;margin-top:18px}#chiba-preview .quick button{border:0;background:transparent;padding:0;color:#2163b8}#chiba-preview section{padding:32px 36px;border-top:1px solid #e5eaf1;scroll-margin-top:65px}#chiba-preview h2{font-size:23px;margin:0 0 22px;font-weight:600;letter-spacing:-.5px}#chiba-preview h2 small{font-size:12px;color:#6b7b91;font-weight:400;margin-left:12px;letter-spacing:0}#chiba-preview .research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}#chiba-preview .research-item{will-change:transform,opacity}#chiba-preview .art{height:160px;background:linear-gradient(150deg,#f7f9fc,#eaf0f7);border-radius:8px;overflow:hidden;color:#4481c9}#chiba-preview .art svg{width:100%;height:100%;display:block}#chiba-preview h3{font-size:17px;margin:13px 0 3px;font-weight:600}#chiba-preview .description{font-size:12px;color:#5c6d86;margin:0}#chiba-preview .reveal{opacity:1;transform:none}#chiba-preview .reveal.ready{transition:opacity .55s ease,transform .65s cubic-bezier(.2,.7,.2,1);opacity:.15;transform:translateY(22px)}#chiba-preview .reveal.ready.shown{opacity:1;transform:translateY(0)}#chiba-preview .impact{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}#chiba-preview .impact strong{display:block;font-weight:500;font-size:16px}#chiba-preview .impact p{color:#63758d;font-size:12px;margin:6px 0}#chiba-preview .paper{display:flex;align-items:start;gap:20px;padding:17px 0;border-top:1px solid #e7ecf2}#chiba-preview .paper .year{color:#7d8ca1;font-size:12px}#chiba-preview .paper-title{font-size:15px;line-height:1.55}#chiba-preview .paper small{display:block;color:#65758c;margin-top:6px}#chiba-preview a{color:#2468bb;text-decoration:none}#chiba-preview .bottom{display:flex;align-items:center;justify-content:space-between;padding:28px 36px 42px;border-top:1px solid #e5eaf1}#chiba-preview .bottom small{color:#77869a}#chiba-preview .scroll-hint{font-size:11px;color:#718198;text-align:center;padding-bottom:14px}#chiba-preview .viewport.mobile{max-width:390px;margin:auto}#chiba-preview .viewport.mobile header{padding:12px 18px}#chiba-preview .viewport.mobile nav{display:none}#chiba-preview .viewport.mobile .hero{grid-template-columns:78px 1fr;gap:18px;padding:30px 22px}#chiba-preview .viewport.mobile .portrait{width:78px;height:104px;align-self:start}#chiba-preview .viewport.mobile .identity{display:contents}#chiba-preview .viewport.mobile .nameblock{align-self:center}#chiba-preview .viewport.mobile h1{font-size:28px}#chiba-preview .viewport.mobile .english{font-size:17px;margin-bottom:0}#chiba-preview .viewport.mobile .details{grid-column:1/-1}#chiba-preview .viewport.mobile section{padding:26px 22px}#chiba-preview .viewport.mobile .research-grid{grid-template-columns:1fr;gap:20px}#chiba-preview .viewport.mobile .research-item{display:grid;grid-template-columns:108px 1fr;gap:14px;align-items:center}#chiba-preview .viewport.mobile .art{height:85px}#chiba-preview .viewport.mobile h3{font-size:15px;margin:0 0 5px}#chiba-preview .viewport.mobile .impact{grid-template-columns:1fr;gap:15px}#chiba-preview .viewport.mobile .bottom{padding:25px 22px;flex-wrap:wrap;gap:14px}#chiba-preview .no-motion .reveal.ready{opacity:1;transform:none;transition:none}#chiba-preview .no-motion{scroll-behavior:auto} @media(max-width:560px){#chiba-preview .controls{gap:8px;font-size:12px}#chiba-preview .brand{font-size:17px}#chiba-preview .viewport{height:580px}}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* 上下のパディングを最小限に */
-}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background: #444;
-}
+#chiba-preview .detail-art{height:180px;max-width:420px;margin:18px 0 24px;background:linear-gradient(150deg,#f7f9fc,#eaf0f7);border-radius:8px;overflow:hidden}#chiba-preview .detail-art canvas{width:100%;height:100%;display:block}#chiba-preview .bio-lead{font-size:15px;line-height:1.9;max-width:790px}#chiba-preview .career-story{margin-top:30px}#chiba-preview .career-story article{display:grid;grid-template-columns:100px 1fr;gap:24px;padding:0 0 30px;position:relative}#chiba-preview .career-date{color:#285b99;font-size:13px;padding-top:2px}#chiba-preview .career-story article>div:last-child{border-left:2px solid #e6edf5;padding-left:24px}#chiba-preview .career-story h3{margin:0 0 10px;font-size:16px}#chiba-preview .career-story p{margin:0;line-height:1.85}#chiba-preview .footer-links{display:flex;gap:20px;flex-wrap:wrap}#chiba-preview .viewport.mobile .career-story article{grid-template-columns:1fr;gap:8px;padding-bottom:25px}#chiba-preview .viewport.mobile .career-story article>div:last-child{padding-left:14px}
 
-nav ul li {
-    margin: 0 15px;
-}
 
-nav ul li a, .lang-btn {
-    color: #fff;
-    text-decoration: none;
-}
+#chiba-preview h1,#chiba-preview h2,#chiba-preview h3{color:#10213b!important;-webkit-text-fill-color:#10213b;opacity:1}#chiba-preview .reveal.ready{opacity:1;transform:translateY(15px)}#chiba-preview .reveal.ready.shown{transform:none}#chiba-preview .hero-art{opacity:.075}#chiba-preview details{border-top:1px solid #e4eaf2;padding:14px 0}#chiba-preview summary{cursor:pointer;font-weight:500;color:#163b65;min-height:30px}#chiba-preview .detail-body{color:#465b75;max-width:740px;padding:6px 0 0 18px}#chiba-preview .detail-body li{margin:10px 0}#chiba-preview .detail-body ul{padding-left:18px}#chiba-preview .more-sources{margin-bottom:0}#chiba-preview .research-detail-link{display:inline-block;margin-top:10px;color:#2163b8;border:0;background:transparent;padding:0;font-size:12px}#chiba-preview #chiba-interests p{color:#455773;margin:0;max-width:670px}#chiba-preview [data-mode][aria-pressed=true]{background:#163b65;color:#fff;border-color:#163b65}#chiba-preview .no-motion .reveal.ready{transform:none}
 
-.lang-btn {
-    background: #444;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
 
-.lang-btn:hover {
-    background: #555;
-}
+#chiba-preview strong,#chiba-preview summary,#chiba-preview .brand{color:#10213b!important;-webkit-text-fill-color:#10213b}#chiba-preview p,#chiba-preview .description,#chiba-preview small,#chiba-preview .role,#chiba-preview .english{color:#465a75}#chiba-preview header{flex-wrap:wrap}#chiba-preview .language{display:flex;gap:5px;align-items:center;margin-left:auto}#chiba-preview .language button{font-size:12px;padding:5px 8px}#chiba-preview .language button[aria-pressed=true]{background:#163b65;color:#fff}#chiba-preview .viewport.mobile .language{display:flex}#chiba-preview .art{height:180px}#chiba-preview .art canvas{display:block;width:100%;height:100%}#chiba-preview .viewport.mobile .research-item{grid-template-columns:1fr;gap:6px}#chiba-preview .viewport.mobile .art{height:176px}#chiba-preview .detail-body h3{font-size:14px;margin-top:22px}#chiba-preview .impact strong{font-size:15px}#chiba-preview .research-detail-link{min-height:36px}#chiba-preview .detail-body a{overflow-wrap:anywhere}
 
-section {
-    padding: 40px 40px 20px 40px;
-    background: #fff;
-    margin: 10px 0;
-}
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+#chiba-preview .career-story{--career-progress:0;position:relative}#chiba-preview .career-story:before,#chiba-preview .career-story:after{content:"";position:absolute;left:124px;top:6px;bottom:30px;width:2px;background:#e4ebf4;pointer-events:none}#chiba-preview .career-story:after{background:#557fae;transform:scaleY(var(--career-progress));transform-origin:top;will-change:transform}#chiba-preview .career-story article{opacity:1;transform:translateY(12px);transition:transform .65s cubic-bezier(.2,.7,.2,1)}#chiba-preview .career-story article.career-in{transform:translateY(0)}#chiba-preview .career-story article>div:last-child{border-left-color:transparent}#chiba-preview .career-story .career-date{transition:color .35s}#chiba-preview .career-story article.career-active .career-date{color:#124f94;font-weight:600}#chiba-preview .career-story article>div:last-child:before{content:"";position:absolute;left:120px;margin-top:5px;width:10px;height:10px;background:#d0dce9;border:2px solid #fff;border-radius:50%;z-index:1;transition:background .35s,transform .35s}#chiba-preview .career-story article.career-active>div:last-child:before{background:#467fb9;transform:scale(1.2)}#chiba-preview .no-motion .career-story article{transform:none;transition:none}#chiba-preview .viewport.mobile .career-story:before,#chiba-preview .viewport.mobile .career-story:after{display:none}#chiba-preview .viewport.mobile .career-story article>div:last-child{border-left-color:#e4ebf4}#chiba-preview .viewport.mobile .career-story article>div:last-child:before{left:-4px}#chiba-preview .viewport.mobile .career-story article.career-active>div:last-child{border-left-color:#557fae}
 
-.two-column {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.two-column .column {
-    flex: 1;
-    min-width: 250px;
-}
-
-img {
-    max-width: 30%;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-/* ハンバーガーメニュー */
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-/* モバイル向けのスタイル */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: left;  /* 左寄せに変更 */
-        background: #333;  /* 背景色をナビゲーションバーと統一 */
-        padding: 10px;
-        position: absolute;  /* メニューが固定されるようにする */
-        top: 60px;  /* ヘッダーの高さ分下げる */
-        left: 0;
-        z-index: 1001;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a, .lang-btn {
-        padding: 10px;
-        display: block;
-        width: 100%;
-    }
-
-    .two-column {
-        flex-direction: column; /* 1カラムに変更 */
-    }
-
-    .profile-img {
-        padding-top: 80px; 
-        max-width: 50%; /* 画像を大きく表示するために最大幅を変更 */
-    }
-}
-p {
-    padding-left: 10px;
-}
-#about {
-    padding-top: 40px; /* 固定ナビゲーションバーの高さに合わせて余白を設定 */
-}
+/* Standalone site layout. */
+html,body{margin:0;padding:0;height:100%;background:#fff}#chiba-preview{border:0;border-radius:0;overflow:hidden}#chiba-preview .controls{display:none}#chiba-preview .viewport{height:100vh;height:100dvh;overscroll-behavior:auto}#chiba-preview .viewport.mobile{max-width:none}#chiba-preview header{max-width:1200px;margin:auto}#chiba-preview .content{max-width:1080px}#chiba-preview .viewport.mobile header{max-width:none}@media(prefers-reduced-motion:reduce){#chiba-preview *{scroll-behavior:auto!important;transition:none!important}}

@@ -1,265 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="千葉 大将">
-    <meta name="keywords" content="Hironobu Chiba, research, publications, acoustic signal processing, NTT, patents">
-    <meta name="keywords" content="千葉大将,　千葉　大将, Hironobu Chiba, Acoustic Signal Processing, NTT, Research, Publications, Patents, Awards, Academic Activities, 音響信号処理, 研究, 論文, 特許, 受賞, 学会活動">
-    <meta name="author" content="千葉大将,　千葉　大将, Hironobu Chiba">
-    <title>千葉 大将 (CHIBA, HIRONOBU) - Researcher Profile</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>千葉 大将 (Hironobu Chiba) — Researcher Profile</title>
+<meta name="description" content="千葉大将の研究者プロフィール。NTT コンピュータ＆データサイエンス研究所 研究主任。音漏れ低減、空間音響、オープンイヤーANCの研究・実用化・文献を紹介。">
+<link rel="stylesheet" href="styles.css">
+<script src="analytics-config.js" defer></script>
+<script src="analytics.js" defer></script>
+<script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="menu-icon" id="menu-icon">&#9776;</div>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#awards">Awards & Funds</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                    <li><button id="lang-toggle" class="lang-btn">English</button></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<div id="chiba-preview">
 
-    <section id="about" class="two-column">
-        <div class="column">
-            <img src="profile.jpg" id="profile-img" alt="Hironobu Chiba's Profile Picture | 千葉大将のプロフィール写真">
-        </div>
-        <div class="column">
-            <h2>About me</h2>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;CHIBA, Hironobu (千葉 大将)</h3>
-            <div id="about-content-ja">
-                <p>NTT CD研にて、オープンイヤー型イヤホンの設計および音響信号処理によるパーソナライズドサウンドゾーン (PSZ) の研究開発に従事。</p>
-                <p>所属:</p>
-                <ul>
-                    <li>2019.2 - 現在: NTT株式会社, コンピュータ&データサイエンス研究所</li>
-                    <li>2015.4 - 2019.1: パイオニア(株) 研究開発部</li>
-                    <li>2013.4 - 2015.3: 筑波大学 コンピュータサイエンス専攻 (修士)</li>
-                    <li>2009.4 - 2013.3: 筑波大学 情報学群 情報科学類</li>
-					<li>2006.4 - 2009.3: 愛媛県立新居浜西高等学校</li>
-                </ul>
-                <p>専門:</p>
-                <ul>
-                    <li>音響信号処理
-                        <ul>
-                            <li>音源強調，音源分離</li>
-                            <li>バイノーラル録音・再生</li>
-                            <li>イベント検知</li>
-                            <li>能動騒音制御（ANC, ノイキャン）</li>
-                        </ul>
-                    </li>
-                    <li>音響ハードウェア設計
-                        <ul>
-                            <li>音響デバイスの局所再生のための筐体設計</li>
-                            <li>オープンイヤー型イヤホン・ヘッドホン</li>
-                            <li>小型スピーカ</li>
-                        </ul>
-                    </li>
-                    <li>音楽情報処理，音楽情報検索</li>
-                </ul>
-            </div>
-            <div id="about-content-en" style="display: none;">
-                <p>Engaged in the research and development of Personalized Sound Zones (PSZ) through open-ear headphone design and acoustic signal processing at NTT Computer and Data Science Laboratories.</p>
-                <p>Affiliation:</p>
-                <ul>
-                    <li>2019.2 - Present: NTT, Inc., Computer & Data Science Laboratories</li>
-                    <li>2015.4 - 2019.1: Pioneer Corporation, Research and Development Department</li>
-                    <li>2013.4 - 2015.3: University of Tsukuba, Department of Computer Science (M. Eng.)</li>
-                    <li>2009.4 - 2013.3: University of Tsukuba, School of Informatics, College of Information Science</li>
-					<li>2006.4 - 2009.3: Ehime Prefectural Niihama Nishi High School</li>
-                </ul>
-                <p>Specialization:</p>
-                <ul>
-                    <li>Acoustic Signal Processing
-                        <ul>
-                            <li>Source enhancement, source separation</li>
-                            <li>Binaural recording and playback</li>
-                            <li>Event detection</li>
-                            <li>Active noise control (ANC)</li>
-                        </ul>
-                    </li>
-                    <li>Music Information Processing, Music Information Retrieval</li>
-                    <li>Acoustic Device Design
-                        <ul>
-                            <li>Enclosure design for localized playback of acoustic devices</li>
-                            <li>Open-ear headphones and earphones</li>
-                            <li>Small Loudspeakers</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <section id="research">
-        <h2>Research</h2>
-        <div id="research-content-ja">
-            <ul>
-                <li>耳を塞がず，音漏れのないオープンイヤー型イヤホン設計を発明
-                    <ul>
-                        <li><a href="https://www.nwm.global/">NTTソノリティ製品 nwmブランドのイヤホン・ヘッドホン (MWE001, MBE001, MBN001, nwm ONE など)</a>で利用</li>
-                        <li><a href="https://journal.ntt.co.jp/article/25734">2024年, NTT技術ジャーナル 逆相の音を活用した新たな音の閉じ込め手法 PSZ スポット再生技術</a></li>
-                        <li><a href="https://journal.ntt.co.jp/article/25742">2024年, NTT技術ジャーナル 主役登場 人と現実世界と仮想世界をつなぐ、次世代音響デバイスをめざして</a></li>
-                        <li><a href="https://ieeexplore.ieee.org/document/11316111/">H. Chiba <i>et. al.</i>, Designing an Open-Back Enclosure to Mitigate Sound Leakage for Open-Ear Headphones, IEEE Access, 2026.</a></li>
-                    </ul>
-                </li>
-                <li>オープンイヤー型イヤホンを使った空間音響信号処理の研究開発</li>
-                    <ul>
-                        <li>空間音響信号処理や補正フィルタの実用化，主観評価，VSTプラグインへの実装</li>
-                        <li><a href="https://journal.ntt.co.jp/article/25736">2024年, NTT技術ジャーナル リアルとバーチャルの音を融合する音響XR技術</a></li>
-                        <li>活用例：</li>
-                        <ul>
-                            <li><a href="https://group.ntt/jp/newsrelease/2023/04/29/230429b.html">2023年，「超歌舞伎 Powered by NTT」にて超歌舞伎の新しい空間音響演出にチャレンジ</a></li>
-                            <li><a href="https://prtimes.jp/main/html/rd/p/000000776.000098811.html">2023年，第180回NTT東日本N響コンサート</a></li>
-                            <li><a href="https://prtimes.jp/main/html/rd/p/000000022.000106079.html">2024年，不快ミュージアム by nwm×NTT</a></li>
-                            <li><a href="https://group.ntt/jp/newsrelease/2024/07/29/240729b.html">2024年，音響XRを活用した新しいスポーツ観戦</a></li>
-                        </ul>
-                    </ul>
-                <li>オープンイヤー型ヘッドホン用広帯域ノイズキャンセリングの研究開発</li>
-                    <ul>
-                        <li><a href="https://group.ntt/jp/newsrelease/2024/11/14/241114a.html">世界初、耳を塞がないのに周囲の騒音を低減できるオープンイヤー型ヘッドホン用広帯域ノイズキャンセリング技術<br>～街中の雑踏やモビリティ内でも、耳を塞がずクリアな音が聞こえる快適なリスニング体験を実現～</a></li>
-                    </ul>
-                <li>その他，大規模楽曲データの音響的分析，車向け音響イベント検知，ウェアラブル振動デバイスの開発などを経験</li>
-            </ul>
-        </div>
-        <div id="research-content-en" style="display: none;">
-            <ul>
-                <li>Invented open-ear headphones and earphones design that do not block the ears and have no sound leakage
-                    <ul>
-                        <li>Utilized in <a href="https://www.nwm.global/">NTT Sonority products: nwm MWE001, MBE001 MBN001, nwm ONE</a></li>
-                        <li><a href="https://journal.ntt.co.jp/article/25734">2024, NTT Technical Journal: New Sound Containment Method Using Inverted Phase Sound - PSZ Spot Playback Technology</a></li>
-                        <li><a href="https://journal.ntt.co.jp/article/25742">2024, NTT Technical Journal: Introducing the Key Player - Next-Generation Acoustic Devices Connecting People, the Real World, and the Virtual World</a></li>
-                        <li><a href="https://ieeexplore.ieee.org/document/11316111/">H. Chiba <i>et. al.</i>, Designing an Open-Back Enclosure to Mitigate Sound Leakage for Open-Ear Headphones, IEEE Access, 2026.</a></li>
-                    </ul>
-                </li>
-                <li>Spatial audio processing using open-ear headphones</li>
-                    <ul>
-                        <li>Implementation of the compensation filters and spatial processing, subjective evaluation, and VST plugin implementation</li>
-                        <li><a href="https://journal.ntt.co.jp/article/25736">2024, NTT Technical Journal: Acoustic XR Technology that Merges Real and Virtual Sounds</a></li>
-                        <li>Applications:</li>
-                        <ul>
-                            <li><a href="https://group.ntt/jp/newsrelease/2023/04/29/230429b.html">2023, Challenge for New Spatial Acoustic Performance in "Super Kabuki Powered by NTT"</a></li>
-                            <li><a href="https://prtimes.jp/main/html/rd/p/000000776.000098811.html">2023, The 180th NTT East Japan NHK Symphony Orchestra Concert</a></li>
-                            <li><a href="https://prtimes.jp/main/html/rd/p/000000022.000106079.html">2024, Discomfort Museum by nwm × NTT</a></li>
-                            <li><a href="https://group.ntt/jp/newsrelease/2024/07/29/240729b.html">2024, New Sports Viewing Experience Utilizing Acoustic XR</a></li>
-                        </ul>
-                    </ul>
-                <li>Additionally experienced in acoustic analysis of large-scale music data, acoustic event detection for vehicles, and development of wearable vibration devices</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="publications">
-        <h2>Publications</h2>
-        <p><a href="https://scholar.google.com/citations?user=lE9qymsAAAAJ" target="_blank">Google Scholar profile</a>.</p>
+<div class="controls"><span>スクロールの動き</span><div><button type="button" data-mode="desktop" aria-pressed="true">PC</button> <button type="button" data-mode="mobile" aria-pressed="false">スマホ</button></div><label><input type="checkbox" id="chiba-motion" checked> 動きあり</label><button type="button" id="chiba-replay">先頭から見る ↑</button></div>
+<div class="viewport" tabindex="0" aria-label="研究者サイトのスクロールプレビュー">
+<header><span class="brand">Hironobu Chiba</span><nav aria-label="ページ内"><button data-go="chiba-profile">Profile</button><button data-go="chiba-research">Research</button><button data-go="chiba-details">Details</button></nav><div class="language" aria-label="Language"><button type="button" data-lang="ja" aria-pressed="true">日本語</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div></header>
+<main class="content">
+<div class="hero" id="chiba-profile"><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 900 380" preserveAspectRatio="none"><g id="chiba-bg"></g></svg></div><img class="portrait" src="profile.jpg" alt="千葉大将のプロフィール写真"><div class="identity"><div class="nameblock"><h1>千葉 大将</h1><div class="english">Hironobu Chiba</div></div><div class="details"><div class="affiliation">NTT株式会社<br>コンピュータ&amp;データサイエンス研究所</div><div class="role">研究主任</div><p class="intro">音響信号処理と音響デバイス設計を専門に、<br>オープンイヤー型デバイスの研究開発に取り組んでいます。</p><div class="tags"><span>音響信号処理</span><span>音響デバイス設計</span><span>空間音響</span><span>能動騒音制御 (ANC)</span></div><div class="quick"><button data-go="chiba-research">研究を見る ↓</button><button data-go="chiba-details">論文一覧 ↓</button></div></div></div></div>
+<div class="scroll-hint">Research ↓</div>
+<section id="chiba-research"><h2>Research <small>主な研究</small></h2><div class="research-grid">
+<article class="research-item reveal"><div class="art"><canvas data-kind="0" role="img"></canvas></div><div><h3>音漏れ低減</h3><p class="description">オープンイヤーの音響設計</p></div></article>
+<article class="research-item reveal"><div class="art"><canvas data-kind="1" role="img"></canvas></div><div><h3>空間音響</h3><p class="description">現実と仮想の音をつなぐ</p></div></article>
+<article class="research-item reveal"><div class="art"><canvas data-kind="2" role="img"></canvas></div><div><h3>オープンイヤーANC</h3><p class="description">耳を塞がない騒音制御</p></div></article>
+</div></section>
+<section id="chiba-awards"><h2 data-en="Awards">受賞</h2><div class="impact"><div><strong data-en="IEICE Achievement Award">電子情報通信学会 業績賞</strong><p>2026</p></div><div><strong data-en="ASJ Technical Development Award">日本音響学会 技術開発賞</strong><p>2023</p></div><div><strong data-en="NTT President’s Award">NTT社長表彰</strong><p data-en="2023 · Research and Development">2023 · 研究開発表彰</p></div></div></section>
+<section id="chiba-details"><h2 data-en="Research details">研究の詳細</h2>
+<details id="chiba-leakage"><summary data-en="Sound leakage control · Open-ear acoustic design">音漏れ低減：オープンイヤーの音響設計</summary><div class="detail-body"><div class="detail-art"><canvas data-kind="0" role="img"></canvas></div><p data-en="Research on open-ear enclosure design that maintains sound near the ear while reducing sound radiated to the surroundings. Near the source, unequal contributions from the positive- and opposite-phase sources leave a useful sound pressure; farther away, their contributions become closer and cancellation becomes stronger.">耳元で必要な音圧を確保し、周囲への音漏れを低減するオープンイヤー筐体設計の研究です。音源の近傍では正相・逆相の寄与に差があり、遠方では両者の寄与が近づいて相殺が強くなる性質を利用します。</p><h3 data-en="Applications">実用化</h3><p data-en="The sound-leakage reduction design is used in NTT Sonority’s nwm earphones and headphones, including MWE001, MBE001, MBN001 and nwm ONE, as well as cocoe-branded sound amplifiers.">音漏れ低減の設計は、NTTソノリティのnwmブランドのイヤホン・ヘッドホン（MWE001、MBE001、MBN001、nwm ONEなど）やcocoeブランドの集音器で利用されています。</p><h3 data-en="Publications & resources">文献・関連情報</h3><ul><li><a href="https://ieeexplore.ieee.org/document/11316111/" target="_blank" rel="noopener noreferrer">H. Chiba, T. Kako, N. Harada, “Designing an Open-Back Enclosure to Mitigate Sound Leakage for Open-Ear Headphones,” IEEE Access, 14, 5684–5700, 2026. ↗</a></li><li><a data-en="NTT Technical Journal · PSZ spot reproduction technology ↗" href="https://journal.ntt.co.jp/article/25734" target="_blank" rel="noopener noreferrer">NTT技術ジャーナル：PSZ スポット再生技術 ↗</a></li><li><a data-en="nwm · Products ↗" href="https://www.nwm.global/" target="_blank" rel="noopener noreferrer">nwm 製品情報 ↗</a></li></ul></div></details>
+<details id="chiba-spatial"><summary data-en="Spatial audio · Connecting real and virtual sound">空間音響：現実と仮想の音をつなぐ</summary><div class="detail-body"><div class="detail-art"><canvas data-kind="1" role="img"></canvas></div><p data-en="Related research evaluates the relationship between headphone transfer functions and localization in open-ear earphones, as well as pressure division ratio (PDR) and acoustic transparency in wearable audio devices.">関連研究として、オープンイヤー型イヤホンのヘッドホン伝達関数と定位の関係性や、ウェアラブル音響デバイスの圧力分割比（PDR）と音響透過性の評価を行っています。</p><h3 data-en="Applications & demonstrations">実用化・実証</h3><p data-en="Spatial audio processing and compensation filters have been implemented for acoustic XR. Public applications include Super Kabuki (2023), the 180th NTT East Japan NHK Symphony Orchestra Concert (2023), and a sports-viewing demonstration (2024).">空間音響信号処理・補正フィルタを音響XRに実装。公開された活用例には、超歌舞伎（2023年）、第180回NTT東日本N響コンサート（2023年）、スポーツ観戦での実証（2024年）があります。</p><h3 data-en="Publications & resources">文献・関連情報</h3><ul><li><a href="https://www.jstage.jst.go.jp/article/ast/47/5/47_e26.27/_article" target="_blank" rel="noopener noreferrer">H. Chiba, T. Kako, Y. Watanabe, K. Noguchi, Y. Kamamoto, F. Nakamura, K. Iida, “Influence of acoustic coupling design in wearable audio devices on pressure division ratio and acoustic transparency,” Acoustical Science and Technology, 47(5), 479–483, 2026. ↗</a><br><span>DOI: 10.1250/ast.e26.27</span></li><li><a data-en="NTT Technical Journal · Acoustic XR ↗" href="https://journal.ntt.co.jp/article/25736" target="_blank" rel="noopener noreferrer">NTT技術ジャーナル：リアルとバーチャルの音を融合する音響XR技術 ↗</a></li><li><a data-en="Demonstration · Super Kabuki ↗" href="https://group.ntt/jp/newsrelease/2023/04/29/230429b.html" target="_blank" rel="noopener noreferrer">実証紹介：超歌舞伎 ↗</a></li><li><a data-en="Demonstration · Sports viewing ↗" href="https://group.ntt/jp/newsrelease/2024/07/29/240729b.html" target="_blank" rel="noopener noreferrer">実証紹介：音響XRを活用したスポーツ観戦 ↗</a></li></ul></div></details>
+<details id="chiba-anc"><summary data-en="Open-ear ANC · Noise control without blocking the ears">オープンイヤーANC：耳を塞がない騒音制御</summary><div class="detail-body"><div class="detail-art"><canvas data-kind="2" role="img"></canvas></div><p data-en="I research ANC for open-ear devices that leave the ears unobstructed. One example is broadband active noise control (ANC) for open-ear headphones. Sound from a secondary source is superimposed on noise to reduce sound pressure at the control location. Whereas closed-back headphones commonly provide control up to around 1 kHz, this work explores extending ANC beyond 1 kHz to achieve effective noise reduction in open-ear devices.">耳をふさがないオープンイヤー型デバイスにおけるANCの研究開発を行っています。例として、オープンイヤー型ヘッドホン向けの広帯域アクティブノイズコントロール（ANC）があります。二次音源から出力する制御音を騒音に重ね、制御位置での音圧を低減します。密閉型ヘッドホンでは1kHzまでの制御が一般的ですが、耳を塞がないオープンイヤー向けで騒音抑圧効果を生むために、1kHzを超えたANCの広帯域化に挑戦しました。</p><h3 data-en="Development status">実用化に向けた研究開発</h3><p data-en="A real-time interactive demonstration of broadband ANC for open-ear headphones was exhibited at NTT R&D Forum 2024.">オープンイヤー型ヘッドホン向けの広帯域ANCのリアルタイム体験デモを、NTT R&amp;Dフォーラム2024 に展示。</p><h3 data-en="Publications & resources">文献・関連情報</h3><ul><li><a data-en="NTT release · Broadband ANC for open-ear headphones ↗" href="https://group.ntt/jp/newsrelease/2024/11/14/241114a.html" target="_blank" rel="noopener noreferrer">NTT公式発表：オープンイヤー型ヘッドホン用広帯域ノイズキャンセリング技術 ↗</a></li></ul></div></details>
+</section>
+<section id="chiba-biography"><h2 data-en="About me">自己紹介</h2><p class="bio-lead" data-en="I invented PSZ Wearable, an open-ear earphone technology that reduces sound leakage using opposite-phase sound, adopted in NTT Sonority’s nwm product lineup. My research and development spans broadband ANC for open-ear headphones, spatial audio and acoustic XR, creating new listening experiences through research and real-world implementation. I have worked on wearable audio devices, automotive audio and home audio.">音漏れを逆相音波で打ち消すオープンイヤー型イヤホン技術「PSZ Wearable」を発明し、NTT sonority “nwm” ブランド製品群で採用。オープンイヤー型ヘッドホン向け広帯域ノイズキャンセリング、空間音響処理、音響XRなどの研究開発・社会実装を推進するなど、新しい音響体験を実現するための研究開発に取り組んでいます。ウェアラブル音響デバイス、車載音響、ホームオーディオなどに関する研究開発経験があります。</p>
+<div class="career-story">
+<article><div class="career-date">2015</div><div><h3 data-en="University of Tsukuba · Master’s degree">筑波大学大学院 修士課程修了</h3><p data-en="Completed the master’s program in Computer Science at the University of Tsukuba. Received the Acoustical Society of Japan’s Student Presentation Award and the Department of Computer Science Award during my studies.">筑波大学大学院コンピュータサイエンス専攻修士課程修了。在学中に日本音響学会 学生優秀発表賞、CS専攻長表彰を受賞。</p></div></article>
+<article><div class="career-date">2015–2019</div><div><h3 data-en="Pioneer · Audio and music research">パイオニアで音・音楽の研究開発</h3><p data-en="Joined Pioneer Corporation in 2015. In the R&D department, worked on deep-learning-based acoustic and musical analysis of large music collections, acoustic event detection for automotive applications, and wearable haptic devices.">2015年パイオニア株式会社に入社し、研究開発部にて大規模楽曲データの深層学習による音響・音楽的分析、車載向け音響イベント検知、ウェアラブル振動デバイスの研究開発に従事。</p></div></article>
+<article><div class="career-date">2019–</div><div><h3 data-en="NTT · Invention and commercialization of PSZ Wearable">NTTでPSZ Wearableを発明・製品化</h3><p data-en="Joined Nippon Telegraph and Telephone Corporation (NTT) in 2019. At the Computer and Data Science Laboratories, invented an open-ear enclosure design that reduces sound leakage using opposite-phase sound. PSZ Wearable was adopted in NTT Sonority’s nwm product lineup. This work received the NTT President’s Award, the ASJ Technical Development Award and the IEICE Achievement Award. A first-author paper on its prototype, theory and evaluation was published in IEEE Access.">2019年日本電信電話株式会社（NTT）に入社。コンピュータ&amp;データサイエンス研究所にて、耳を塞がず音漏れを低減するオープンイヤー型イヤホンの筐体設計手法を発明。逆相の音で音を閉じ込める独自技術「パーソナライズドサウンドゾーン（PSZ）ウェアラブル」は、NTTソノリティ社 nwmブランド製品群で採用。同成果で日本電信電話(株)社長表彰、日本音響学会 技術開発賞、電子情報通信学会 業績賞を受賞。原理試作・理論・評価に関する筆頭論文をIEEE Accessに発表。</p></div></article>
+<article><div class="career-date">2023–</div><div><h3 data-en="Spatial audio and acoustic XR in the real world">空間音響・音響XRを社会へ</h3><p data-en="Real-world applications include Super Kabuki Powered by NTT and the 180th NTT East Japan NHK Symphony Orchestra Concert in 2023, followed by the Discomfort Museum by nwm × NTT and new sports-viewing experiences in 2024. Led work across compensation-filter design, real-time spatial-audio VST plug-in implementation, demonstrations and subjective evaluation.">2023年「超歌舞伎 Powered by NTT」での空間音響演出、第180回NTT東日本N響コンサート、2024年「不快ミュージアム by nwm×NTT」、音響XRを活用した新しいスポーツ観戦体験など、エンタテインメント・文化・スポーツの現場で多数の社会実装を実現。補正フィルタ設計からリアルタイム空間音響VSTプラグイン実装、実証実験での活用、主観評価まで一気通貫で推進。</p></div></article>
+<article><div class="career-date">2024–</div><div><h3 data-en="Broadband ANC for open-ear headphones">オープンイヤー型ヘッドホンの広帯域ANC</h3><p data-en="Invented broadband noise-cancellation technology for open-ear headphones, announced by NTT in 2024 as a world first within the scope defined in its release. A real-time interactive demonstration of broadband ANC for open-ear headphones was exhibited at NTT R&D Forum 2024. This work received the NTT Service Innovation Laboratory Group Excellent Performance Award.">2024年、オープンイヤー型ヘッドホン用広帯域ノイズキャンセリング技術を発明。耳を塞がない構造でも周囲の騒音を低減する技術として、NTTより世界初の成果として報道発表（対象範囲は公式発表に記載）。NTT R&amp;Dフォーラム2024に実機体験デモを展示。同成果によりNTTサービスイノベーション総合研究所 優秀業績賞を受賞。</p><a data-en="NTT announcement ↗" href="https://group.ntt/jp/newsrelease/2024/11/14/241114a.html" target="_blank" rel="noopener noreferrer">NTT公式発表 ↗</a></div></article>
+<article><div class="career-date" data-en="Community">学術・育成</div><div><h3 data-en="Research community and mentoring">学会活動と次世代研究者の育成</h3><p data-en="Received a combined total of six or more awards from NTT Computer and Data Science Laboratories and NTT Service Innovation Laboratory Group, including Special and Research Encouragement awards. Served as a session vice chair at ASJ meetings and as a member of the High-Realism Audio Research Committee. Authored a review article in the Journal of the Acoustical Society of Japan and supervised interns at NTT for three consecutive years. My work combines signal processing and hardware design, from invention to real-world implementation.">NTTコンピュータ&amp;データサイエンス研究所 所長表彰 特別賞・研究奨励賞、NTTサービスイノベーション総合研究所 優秀業績賞を合計6回以上受賞。日本音響学会研究発表会での副座長、高臨場感オーディオ調査研究委員会 研究委員を務め、日本音響学会誌にて解説論文を執筆。NTT研究所にて3年連続でインターンシップ生を指導。音響信号処理とハードウェア設計の両輪から、発明から社会実装まで一貫した研究開発に取り組んでいます。</p></div></article>
+</div></section>
 
-        <h2>Patents</h2>
-        <p><a href="https://patents.google.com/?inventor=Hironobu+Chiba&assignee=Pioneer,Nippon+Telegr+%26+Teleph+Corp+%3CNtt%3E" target="_blank">Google Patents</a>.</p>
-    </section>
+<section id="chiba-interests"><h2 data-en="Interests & music">趣味・音楽活動</h2><p data-en="Playing musical instruments (piano and guitar), listening to music, composing and producing music. My music has been used on television and in other media.">楽器演奏（ピアノ、ギター）、音楽鑑賞、作曲・音源制作（テレビ等での採用実績あり）。</p></section>
+<footer class="bottom"><div class="footer-links"><a href="https://www.linkedin.com/in/hironobu-chiba" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://scholar.google.com/citations?user=lE9qymsAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div><small>© Hironobu Chiba</small></footer>
+</main></div>
 
-    <section id="awards">
-        <h2>Awards & Funds</h2>
-        <ul id="awards-content-ja">
-			<li>2026年 令和7年度 一般社団法人 電子情報通信学会（IEICE）業績賞</li>
-			<li>2026年 2025年度 NTTサービスイノベーション総合研究所 優秀業績賞（音響XR）</li>
-            <li>2025年 2024年度 NTTサービスイノベーション総合研究所 優秀業績賞（オープンイヤーANC）</li>
-            <li>2024年 NTTコンピュータ&データサイエンス研究所 所長表彰 特別賞</li>
-            <li>2023年 2022年度 日本電信電話(株) 社長表彰（研究開発表彰）</li>
-            <li>2023年 2023 63rd ACC TOKYO CREATIVITY AWARDS クリエイティブイノベーション部門 ファイナリスト</li>
-            <li>2023年 第31回（令和5年度）日本音響学会 技術開発賞</li>
-            <li>2023年 NTTコンピュータ&データサイエンス研究所 所長表彰 特別賞</li>
-            <li>2023年 NTTサービスイノベーション総合研究所 優秀業績賞</li>
-            <li>2022年 NTTコンピュータ&データサイエンス研究所 所長表彰 研究奨励賞</li>
-            <li>2015年 パイオニア株式会社 新人ソフトウェア研修 表彰</li>
-            <li>2015年 パイオニア販売株式会社 2015年 夏季販売実習 西日本エリア 優秀賞</li>
-            <li>2015年 日本学生支援機構　大学院第一種奨学金半額免除</li>
-            <li>2015年 筑波大学大学院　コンピュータサイエンス専攻長表彰</li>
-            <li>2015年 一般社団法人日本音響学会　第10回学生優秀発表賞</li>
-        </ul>
-        <ul id="awards-content-en" style="display: none;">
-			<li>2026 IEICE Achievement Award</li>
-			<li>2026 NTT Service Innovation Laboratory Group Excellent Performance Award</li>
-            <li>2025 NTT Service Innovation Laboratory Group Excellent Performance Award</li>
-            <li>2024 NTT Computer & Data Science Laboratories Director’s Award, Special Prize</li>
-            <li>2023 Nippon Telegraph and Telephone Corporation President's Award (Research and Development Award)</li>
-            <li>2023 63rd ACC TOKYO CREATIVITY AWARDS Finalist, Creative Innovation Category</li>
-            <li>2023 31st Acoustical Society of Japan Technology Development Award</li>
-            <li>2023 NTT Computer & Data Science Laboratories Director’s Award, Special Prize</li>
-            <li>2023 NTT Service Innovation Laboratory Group Excellent Performance Award</li>
-            <li>2022 NTT Computer & Data Science Laboratories Director’s Award, Research Encouragement Award</li>
-            <li>2015 Pioneer Corporation Newcomer Software Training Award</li>
-            <li>2015 Pioneer Sales Corporation 2015 Summer Sales Internship, West Japan Area Excellence Award</li>
-            <li>2015 JASSO Graduate School First-Class Scholarship, Half Waiver</li>
-            <li>2015 Tsukuba University Graduate School, Computer Science Major Award</li>
-            <li>2015 Acoustical Society of Japan 10th Student Excellent Presentation Award</li>
-        </ul>
-    </section>
-    
-    <section id="activities">
-        <h2>Academic Activities (学会活動)</h2>
-        <ul id="activities-content-ja">
-			<li>2026.3 日本音響学会 第156回(2026年秋季)研究発表会 副座長 (オーディオ)</li>
-            <li>2026.3 日本音響学会 第155回(2026年春季)研究発表会 副座長 (オーディオ)</li>
-            <li>2025.3 日本音響学会 第153回(2025年春季)研究発表会 副座長 (オーディオ)</li>
-            <li>2024.9 日本音響学会 第152回(2024年秋季)研究発表会 副座長 (オーディオSS)</li>
-            <li>2024.6 - 現在 高臨場感オーディオ調査研究委員会 研究委員</li>
-        </ul>
-        <ul id="activities-content-en" style="display: none;">
-			<li>2026.3 Vice Chair (Audio), 156th (2026 Autumn) Research Presentation Meeting of the Acoustical Society of Japan</li>
-			<li>2026.3 Vice Chair (Audio), 155th (2026 Spring) Research Presentation Meeting of the Acoustical Society of Japan</li>
-            <li>2025.3 Vice Chair (Audio), 153th (2025 Spring) Research Presentation Meeting of the Acoustical Society of Japan</li>
-            <li>2024.9 Vice Chair (Audio SS), 152th (2024 Autumn) Research Presentation Meeting of the Acoustical Society of Japan</li>
-            <li>2024.6 - Present Research Committee Member, High Realism Audio Survey Research Committee</li>
-            <li>Peer-review experience</li>
-        </ul>
-		
-		<!--
-		
-		<ul id="activities-content-ja">
-            <li>2024.12.11 NTT IPR-DAY 2024</li>
-            <li>2025.02.19 日本騒音制御工学会 アクティブコントロール分科会</li>
-        </ul>
-		<ul id="activities-content-ja">
-            <li>"イヤホン，ヘッドホンの最新技術 -新技術がもたらす次世代オーディオ体験-"<br>福井，加古，<b>千葉</b>(NTT)，岩瀬(NTTソノリティ),日本音響学会誌81巻2号 pp.177-183</li>
-        </ul>
-		 <ul id="activities-content-en" style="display: none;">
-		-->
-		<h2>Supervisor for students (インターンシップ指導経験)</h2>
-        <ul>
-            <li>2022 summer internship (audio signal processing) at NTT CD Lab.</li>
-            <li>2023 summer internship (audio signal processing) at NTT CD Lab.</li>
-            <li>2024 summer internship (audio signal processing) at NTT CD Lab.</li>
-        </ul>
-		<h2>Invited lecture (招待講演)</h2>
-        <ul>
-            <li>2024.12.11 NTT IPR-DAY 2024</li>
-            <li>2025.02.19 INCE/J active control subcommittee</li>
-        </ul>
-		<h2>Review paper (解説論文)</h2>
-        <ul>
-            <li>"Latest technologies in earphones and headphones: Next-generation audio experience enabled by new technologies,"<br>
-			M. Fukui, T. Kako, <b>H. Chiba</b> (NTT), J. Iwase (NTT Sonority), Journal of ASJ, 81(2) pp.177-183, 2025.</li>
-        </ul>
-		
-    </section>
-    
+</div>
 
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><a href="https://www.linkedin.com/in/hironobu-chiba">LinkedIn</a></p>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Hironobu Chiba</p>
-    </footer>
 
-    <script src="scripts.js"></script>
+
+
+
 </body>
 </html>
